@@ -14,7 +14,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       remotes: {
         'remote-app': { 
-          external: `Promise.resolve('https://64f60de270c756179d401640--classy-klepon-6ca347.netlify.app/assets/remoteEntry.js')`,
+          external: `Promise.resolve('https://classy-klepon-6ca347.netlify.app/assets/remoteEntry.js')`,
           externalType: "promise"
         }
       },
