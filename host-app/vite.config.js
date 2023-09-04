@@ -19,7 +19,6 @@ export default defineConfig({
           externalType: "promise"
         },
       },
-      shared: ["vue"],
     }),
   ],
 });
