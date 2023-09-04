@@ -76,7 +76,7 @@
                   </div>
                 </li>
               </ul>
-              <p v-else>Your cart is empty</p>
+              <p v-else class="text-center">Your cart is empty</p>
             </div>
             <div class="mt-6 flex items-center justify-between">
               <p class="text-sm font-medium text-gray-900">Total</p>
