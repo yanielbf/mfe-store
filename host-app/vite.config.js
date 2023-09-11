@@ -18,7 +18,7 @@ export default defineConfig({
           externalType: "promise",
         },
         "list-product-app": {
-          external: `Promise.resolve('http://localhost:4173/assets/remoteEntry.js')`,
+          external: `Promise.resolve('https://musical-moonbeam-da3cc5.netlify.app/assets/remoteEntry.js')`,
           externalType: "promise",
         },
       },

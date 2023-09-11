@@ -15,5 +15,5 @@
 
 <style scoped>
 @import "https://classy-klepon-6ca347.netlify.app/assets/remote-asset-index.css";
-@import "http://localhost:4173/assets/remote-asset-index.css";
+@import "https://musical-moonbeam-da3cc5.netlify.app/assets/remote-asset-index.css";
 </style>
