@@ -13,11 +13,11 @@ export default defineConfig({
       name: "host-app",
       filename: "remoteEntry.js",
       remotes: {
-        "cart-app": {
+        "purchase-mfe": {
           external: `Promise.resolve('https://classy-klepon-6ca347.netlify.app/assets/remoteEntry.js')`,
           externalType: "promise",
         },
-        "list-product-app": {
+        "catalog-mfe": {
           external: `Promise.resolve('https://musical-moonbeam-da3cc5.netlify.app/assets/remoteEntry.js')`,
           externalType: "promise",
         },

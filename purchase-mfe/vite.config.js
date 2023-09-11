@@ -6,18 +6,18 @@ import federation from "@originjs/vite-plugin-federation";
 export default defineConfig({
   build: {
     rollupOptions: {
-      output: {
-        assetFileNames: "assets/remote-asset-[name].css",
-      },
-    },
+			output: {
+				assetFileNames: 'assets/remote-asset-[name].css',
+			}
+		}
   },
   plugins: [
     vue(),
     federation({
-      name: "list-product-app",
+      name: "purchase-mfe",
       filename: "remoteEntry.js",
       exposes: {
-        "./ListProduct": "./src/components/ListProduct.vue",
+        "./Cart": "./src/components/Cart.vue",
       },
     }),
   ],
