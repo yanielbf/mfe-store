@@ -3,25 +3,26 @@
     <br />
     <div class="mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-center">
-        <h1 class="text-2xl font-semibold text-gray-900">Your Cart 11111</h1>
+        <h1 class="text-2xl font-semibold text-gray-900">Your Cart</h1>
       </div>
       <div class="mx-auto mt-4 max-w-md md:mt-4">
         <div class="rounded-3xl bg-white shadow-lg">
           <div class="px-4 py-6 sm:px-8 sm:py-10">
             <div class="flow-root">
-              <ul v-if="this.$store?.state?.items?.length > 0" class="-my-8">
+              <ul v-if="$store?.state?.items?.length > 0" class="-my-8">
                 <li
-                  v-for="p in this.$store?.state?.items || []"
+                  v-for="p in $store?.state?.items || []"
                   class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0"
                 >
                   <div class="shrink-0 relative">
                     <span
                       class="absolute top-1 left-1 flex h-6 w-6 items-center justify-center rounded-full border bg-white text-sm font-medium text-gray-500 shadow sm:-top-2 sm:-right-2"
-                      > {{ p.quantity }}</span
+                    >
+                      {{ p.quantity }}</span
                     >
                     <img
                       class="h-24 w-24 max-w-full rounded-lg object-cover"
-                      :src="p.photo"
+                      :src="p.image"
                       alt=""
                     />
                   </div>
@@ -29,8 +30,10 @@
                   <div class="relative flex flex-1 flex-col justify-between">
                     <div class="sm:col-gap-5 sm:grid sm:grid-cols-2">
                       <div class="pr-8 sm:pr-5">
-                        <p class="text-base font-semibold text-gray-900">
-                          {{ p.name }}
+                        <p
+                          class="text-base font-semibold text-gray-900 line-clamp-3"
+                        >
+                          {{ p.title }}
                         </p>
                         <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">
                           {{ p.size }}
@@ -82,7 +85,7 @@
               <p class="text-sm font-medium text-gray-900">Total</p>
               <p class="text-2xl font-semibold text-gray-900">
                 <span class="text-xs font-normal text-gray-400">USD</span>
-                ${{ this.$store?.getters?.totalAmount || 0 }}
+                ${{ $store?.getters?.totalAmount || 0 }}
               </p>
             </div>
 

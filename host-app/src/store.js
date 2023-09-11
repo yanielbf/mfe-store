@@ -8,7 +8,7 @@ export default createStore({
   },
   getters: {
     totalAmount(state) {
-      return state.items.reduce((acc, x) => acc + x.price * x.quantity, 0);
+      return Math.round(state.items.reduce((acc, x) => acc + x.price * x.quantity, 0));
     },
   },
   mutations: {

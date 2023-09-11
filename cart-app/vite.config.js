@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: "remote-app",
+      name: "cart-app",
       filename: "remoteEntry.js",
       exposes: {
         "./Cart": "./src/components/Cart.vue",

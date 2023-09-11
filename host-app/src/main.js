@@ -3,8 +3,9 @@ import "./style.css";
 import App from "./App.vue";
 import store from "./store";
 
-import Cart from "remote-app/Cart";
-import Products from "./components/Products.vue";
+import Cart from "cart-app/Cart";
+import Products from "list-product-app/ListProduct";
+// import Products from "./components/ListProduct.vue";
 
 const app = createApp(App);
 

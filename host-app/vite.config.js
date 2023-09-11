@@ -5,7 +5,7 @@ import federation from "@originjs/vite-plugin-federation";
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    target: 'esnext' //browsers can handle the latest ES features
+    target: "esnext", //browsers can handle the latest ES features
   },
   plugins: [
     vue(),
@@ -13,10 +13,14 @@ export default defineConfig({
       name: "host-app",
       filename: "remoteEntry.js",
       remotes: {
-        'remote-app': { 
-          external: `Promise.resolve('https://classy-klepon-6ca347.netlify.app/assets/remoteEntry.js')`,
-          externalType: "promise"
-        }
+        "cart-app": {
+          external: `Promise.resolve('http://localhost:4174/assets/remoteEntry.js')`,
+          externalType: "promise",
+        },
+        "list-product-app": {
+          external: `Promise.resolve('http://localhost:4173/assets/remoteEntry.js')`,
+          externalType: "promise",
+        },
       },
     }),
   ],
