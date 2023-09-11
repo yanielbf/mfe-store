@@ -14,7 +14,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       remotes: {
         "cart-app": {
-          external: `Promise.resolve('http://localhost:4174/assets/remoteEntry.js')`,
+          external: `Promise.resolve('https://classy-klepon-6ca347.netlify.app/assets/remoteEntry.js')`,
           externalType: "promise",
         },
         "list-product-app": {
