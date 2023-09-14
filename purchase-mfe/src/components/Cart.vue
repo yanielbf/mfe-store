@@ -3,7 +3,7 @@
     <br />
     <div class="mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-center">
-        <h1 class="text-2xl font-semibold text-gray-900">Your Cart</h1>
+        <h1 class="text-2xl font-semibold text-gray-900">Cart from Microfrontend</h1>
       </div>
       <div class="mx-auto mt-4 max-w-md md:mt-4">
         <div class="rounded-3xl bg-white shadow-lg">
