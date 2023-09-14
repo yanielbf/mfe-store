@@ -2,7 +2,7 @@
   <div class="mt-12">
     <div class="flex items-center justify-center">
       <h1 class="text-2xl font-semibold text-gray-900">
-        Shop from Host ({{ products?.length }} products)
+        List Product from Host ({{ products?.length }} products)
       </h1>
     </div>
     <div class="flex flex-wrap justify-center gap-4">
